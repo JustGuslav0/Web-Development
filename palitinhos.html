@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo dos Palitinhos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
     <style>
-        .box {
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-        }
+
     </style>
 </head>
 <body>
     <h1>Jogo dos Palitinhos</h1>
+    <p>Seu nome:</p>
+    <!-- Input de texto para colocar nome e dar valor para a variável -->
+    <input type="text" id="caixaNome">
+    <!-- Chamando a variável que criei no JS -->
+    <button onclick="alterarNome()" id="jogador">Jogar</button>
+
     <table>
         <tr>
             <td class="box">    
-                <h2>EU</h2>
+                <!-- Nome do jogador que irá digitar-->
+                <h2 id="nomeJogador">Nome</h2>
                 <h3>
                     Palitos: <span id="qtdeEu">3</span>
                 </h3>
-                <button>Jogar</button>
+                <button onclick="clickBotao()">Jogar</button>
             </td>
             <br>
             <td class="box">
@@ -35,11 +38,5 @@
             </td>
         </tr>
     </table>
-
-    <script>
-        console.log("============") 
-        console.log("| Oi gente! |") 
-        console.log("============") 
-    </script>
 </body>
 </html>
