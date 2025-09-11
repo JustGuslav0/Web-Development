@@ -34,4 +34,4 @@ function alterarNome(){
     //Preciso voltar esta função no botão, porque ela é acionada assim que eu clico no botão
 }
         
-// Chama sua função
+// Precisa que chame sua função em algum lugar no HTML
