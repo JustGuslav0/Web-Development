@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Webdev CP01 - Ex01</h1>
+    <h1>Webdev CP01 - Ex 01</h1>
 <h3>
     Calcular o tempo de duração da reunião.
 </h3>
-<div id="espaço">
-    <span><strong>Início:</strong></span>
-    <input style="width:30px" id="horaIni" type="number">
-    <span>:</span>
-    <input style="width:30px" id="minIni" type="number">
-</div>
-<div>
-</div>
-    <span><strong>Término:</strong></span>
-    <input style="width:30px" id="horaFim" type="number">
-    <span>:</span>
-    <input style="width:30px" id="minFim" type="number">
+<div id="container">
+    <div id="espaco1">
+        <span id="inicio"><strong>Início:</strong></span>
+        <span><strong>Término:</strong></span>
+    </div>
+    <div id="espaco2">
+        <div id="hr1">
+            <input style="width:30px" id="horaIni" type="number">
+            <span>:</span>
+            <input style="width:30px" id="minIni" type="number">
+        </div>
+        <div id="hr2">
+            <input style="width:30px" id="horaFim" type="number">
+            <span>:</span>
+            <input style="width:30px" id="minFim" type="number">
+        </div>
+    </div>
 </div>
 <div style="margin-top:10px">
     <button onclick="calcular()">Calcular duração</button>

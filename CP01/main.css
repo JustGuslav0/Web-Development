@@ -1,3 +1,34 @@
 #espaço{
     margin-bottom: 3px;
 }
+
+#teste{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#container{
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+#espaco1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#espaco2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+
+#inicio{
+    margin-bottom: 3px;
+}
+
+#hr1{
+    margin-bottom: 1px;
+}
