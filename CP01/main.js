@@ -1,4 +1,3 @@
-
 function calcular(){
     let horaIni = document.getElementById('horaIni')
     let minIni = document.getElementById('minIni')
@@ -16,17 +15,23 @@ function calcular(){
     let horario1
     let horario2
 
-    if(hora1<=-1||hora1>=24||min1<=-1 || min1>=60){
-        alert('Horário de início inválido, favor insira novamente')
+    if(hora1<=-1||hora1>=24*60||min1<=-1 || min1>=60 && hora2<=-1||hora2>=24*60||min2<=-1 || min2>=60){
+        alert('Horário de início e de término inválido, favor insira novamente')
     }
     else{
-        if(hora2<=-1||hora2>=24||min2<=-1 || min2>=60){
-            alert('Horário de término inválido, favor insira novamente')
+        if(hora1<=-1||hora1>=24*60||min1<=-1 || min1>=60){
+            alert('Horário de início inválido, favor insira novamente')
         }
-    else{
-        horario1 = Math.floor(hora1+min1)
-        horario2 = Math.floor(hora2+min2)
-    }
+        else{
+            if(hora2<=-1||hora2>=24*60||min2<=-1 || min2>=60){
+                alert('Horário de término inválido, favor insira novamente')
+            }
+            else{
+                horario1 = Math.floor(hora1+min1)
+                horario2 = Math.floor(hora2+min2)
+            }
+
+        }
     }
 
     
