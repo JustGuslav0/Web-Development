@@ -10,4 +10,4 @@ let sobLen = Math.floor(Math.random() * nomes.length) % sobrenomes.length
 console.log('pos', nomLen)
 let js = ('Bom dia,', nomes[nomLen] + ' ' + sobrenomes[sobLen])
 
-document.getElementById("js"). innerText = js
+document.getElementById("js").innerText = js
