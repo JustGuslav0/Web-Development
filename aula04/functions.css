@@ -1,0 +1,9 @@
+body{
+    width: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#timer{
+    margin-right: 10px;
+}
